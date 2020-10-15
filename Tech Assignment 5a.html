@@ -1,0 +1,64 @@
+<!-- Programmer: Ashley Hills 
+     Project: Tech Project 5
+     Date: 10/15/2020 
+     Description: HTML5 and CSS Form that will collect info from user input with JavaScript code that conducts Form Validation -->
+
+<!-- Declare that this document is html type -->
+<!DOCTYPE html>
+<!-- Begin the html code and declare the language as English -->
+<html lang="en">
+<!-- Start of Head tag -->
+<head>
+	<meta charset="UTF-8">
+	<title>Ashley & Co. - Customer Information</title>
+	<link rel="stylesheet" href="Tech Project 5b.css">
+<!-- End of Head tag -->
+</head> 
+
+<!-- Start of body tag -->
+<body>
+	<!-- Use of Header 1 on Text aligned to the center of the page -->
+	<h1 style="text-align:center;">Ashley & Co. <br> Customer Information</h1>
+	<p>Please Enter the Required Information Below:</p>
+	<!-- Form and fieldset are used to group the requested input(information) together as well as display the Submit button -->
+	<form id="customerInformationForm" action="/actions_list_page.php" onsubmit="return validateInfoForm()" method="post">
+		<!-- Start of fieldset tag -->
+		<fieldset>
+			<legend>Customer Information:</legend>
+			First Name:<br><input type="text" id="firstname" name="firstname">
+			<br><br>
+			Last Name:<br><input type="text" id="lastname" name="lastname">
+			<br><br>
+			Email:<br><input type="email" id="email" name="email">
+			<br><br>
+			<input type="submit" value="Submit">
+		<!-- End of fieldset tag -->
+		</fieldset>
+	</form>
+    <!-- Start of validateInfoForm code that conducts Form Validation -->
+    <script>
+        function validateInfoForm() 
+        	{
+                var a = document.forms["customerInformationForm"]["firstname"].value;
+                    if (a == "") 
+                    {
+                    alert("ERROR! First Name Field Must be Filled Out");
+                    return false;
+                    }
+                var b = document.forms["customerInformationForm"]["lastname"].value;
+                    if (b == "") 
+                    {
+                    alert("ERROR! Last Name Field Must be Filled Out");
+                    return false;
+                    }
+                var c = document.forms["customerInformationForm"]["email"].value;
+                    if (c == "") 
+                    {
+                    alert("ERROR! Email Field Must be Filled Out");
+                    return false;
+                    }
+             }
+    </script>
+<!-- End of body tag -->
+</body>
+</html>

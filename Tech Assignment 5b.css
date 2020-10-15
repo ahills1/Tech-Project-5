@@ -1,0 +1,31 @@
+<!-- Programmer: Ashley Hills 
+     Project: Tech Project 5b
+     Date: 10/15/2020 
+     Description: HTML5 and CSS Form that will collect info from user input with JavaScript code that conducts Form Validation -->
+
+/* alter the background color */
+body {
+    background-color:lightblue;
+}
+
+/* alter the header by seting a color, fontsize, and font family */
+h1 {
+    color: darkblue; /* Set text color to darkblue */
+    font-size: 45px; /* Set font size to 45px */
+    font-family:arial; /* Set font family to arial */
+}
+
+/* alter the paragraph by seting a color, fontsize, and font family */
+p {
+    color : black; 
+    font-size: 24px;
+    font-family:arial;
+}
+
+/* alter the form by seting a color, fontsize, and font family */
+form {
+    color : black; 
+    font-size: 24px;
+    font-family:arial;
+}
+
